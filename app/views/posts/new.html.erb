@@ -10,13 +10,13 @@
 
 
 <h3>Post Form</h3>
-
-<%= form_for(@post) do |f| %> 
- <%= f.label 'Post title' %><br>
- <%= f.text_field :title %><br> 
  
- <%= f.label 'Post Description' %><br>
- <%= f.text_field :description %><br>
+<%= form_for(@post) do |f| %>
+  <label>Post title:</label><br>
+  <%= f.text_field :title %><br>
  
- <%= f.submit "Submit Post" %>
- <% end %>
+  <label>Post description</label><br>
+  <%= f.text_area :description %><br>
+ 
+  <%= f.submit %>
+<% end %>

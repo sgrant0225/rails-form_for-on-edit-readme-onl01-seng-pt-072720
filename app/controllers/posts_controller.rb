@@ -25,6 +25,5 @@ class PostsController < ApplicationController
 
 	def update
 	 @post.update(params.require(:post).permit(:title, :description))
-	 
 	end
 end
